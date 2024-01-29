@@ -6,11 +6,11 @@ from random import randint
 import config
 
 # Define base-64 encoded images
-with open("api/base64/placeholder_scan_code.txt") as f:
+with open("base64/placeholder_scan_code.txt") as f:
     B64_PLACEHOLDER_SCAN_CODE = f.read()
-with open("api/base64/placeholder_image.txt") as f:
+with open("base64/placeholder_image.txt") as f:
     B64_PLACEHOLDER_IMAGE = f.read()
-with open("api/base64/spotify_logo.txt") as f:
+with open("base64/spotify_logo.txt") as f:
     B64_SPOTIFY_LOGO = f.read()
 
 
