@@ -2,9 +2,9 @@
   <img src="assets/spotify.svg" width="100" align="center">
   <h1>Spotify Readme</h1>
 
-  [![Badge](https://img.shields.io/github/issues/tthn0/Spotify-Readme?style=for-the-badge)](https://github.com/tthn0/Spotify-Readme/issues)
-  [![Badge](https://img.shields.io/github/forks/tthn0/Spotify-Readme?style=for-the-badge)](https://github.com/tthn0/Spotify-Readme/network)
-  [![Badge](https://img.shields.io/github/stars/tthn0/Spotify-Readme?style=for-the-badge)](https://github.com/tthn0/Spotify-Readme/stargazers)
+  [![Badge](https://img.shields.io/github/issues/minkxx/spotify-readme?style=for-the-badge)](https://github.com/minkxx/spotify-readme/issues)
+  [![Badge](https://img.shields.io/github/forks/minkxx/spotify-readme?style=for-the-badge)](https://github.com/minkxx/spotify-readme/network)
+  [![Badge](https://img.shields.io/github/stars/minkxx/spotify-readme?style=for-the-badge)](https://github.com/minkxx/spotify-readme/stargazers)
 
 </div>
 
@@ -16,33 +16,33 @@
 
 #### Default
 ```
-/api
+/
 ```
-![Preview](https://tthn0.vercel.app/api)
+![Preview](https://minkxx-spotify-readme.onrender.com)
 
 #### Spinning CD Effect
 ```
-/api?spin=true
+/?spin=true
 ```
-![Preview](https://tthn0.vercel.app/api?spin=true)
+![Preview](https://minkxx-spotify-readme.onrender.com/?spin=true)
 
 #### Include Scan Code
 ```
-/api?scan=true
+/?scan=true
 ```
-![Preview](https://tthn0.vercel.app/api?scan=true)
+![Preview](https://minkxx-spotify-readme.onrender.com/?scan=true)
 
 #### Rainbow Equalizer
 ```
-/api?rainbow=true
+/?rainbow=true
 ```
-![Preview](https://tthn0.vercel.app/api?rainbow=true)
+![Preview](https://minkxx-spotify-readme.onrender.com/?rainbow=true)
 
 #### Dark Theme
 ```
-/api?theme=dark
+/?theme=dark
 ```
-![Preview](https://tthn0.vercel.app/api?theme=dark)
+![Preview](https://minkxx-spotify-readme.onrender.com/?theme=dark)
 
 ## Setup/Deployment
 
@@ -109,25 +109,13 @@ https://accounts.spotify.com/authorize?client_id={CLIENT_ID}&response_type=code&
 * In any markdown file, add the following (replace `{PROJECT_NAME}` with the name you gave your Vercel project):
 
   ```html
-  <a href="https://github.com/tthn0/Spotify-Readme">
-    <img src="https://{PROJECT_NAME}.vercel.app/api" alt="Current Spotify Song">
+  <a href="https://github.com/minkxx/spotify-readme">
+    <img src="https://minkxx-spotify-readme.onrender.com/" alt="Current Spotify Song">
   </a>
   ```
 
 * Please leave the anchor tag hyperlink reference to this GitHub repo to retain creator credit and for other users to find! 
 
-## Customization
-
-<p>
-  To customize the widget, add query parameters to the endpoint. There are many possible combinations! See how it pairs with other widgets on <a href="https://github.com/tthn0/tthn0">my own README</a>! (If you're on mobile and have a small screen, use a desktop browser or change the zoom level to zoom out.)
-</p>
-
-| Parameter | Default | Values          |
-| :-------- | :------ | :-------------- |
-| `spin`    | `false` | `false`, `true` |
-| `scan`    | `false` | `false`, `true` |
-| `theme`   | `light` | `light`, `dark` |
-| `rainbow` | `false` | `false`, `true` |
 
 ## Note
 
