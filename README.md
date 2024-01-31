@@ -78,35 +78,40 @@ https://accounts.spotify.com/authorize?client_id={CLIENT_ID}&response_type=code&
 * If you're on Linux or Mac with the `curl` command, open up your preferred terminal.
 * Run the following command (replace `{BASE_64}` and `{CODE}` with their respective values):
 
-  ```
-  curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Authorization: Basic {BASE_64}" -d "grant_type=authorization_code&redirect_uri=http://localhost/callback/&code={CODE}" https://accounts.spotify.com/api/token
+  ```bash
+  curl \
+    -X POST \
+    -H "Content-Type: application/x-www-form-urlencoded" \
+    -H "Authorization: Basic {BASE_64}" \
+    -d "grant_type=authorization_code&redirect_uri=http://localhost/callback/&code={CODE}" \
+    https://accounts.spotify.com/api/token
   ```
 
 * If you did everything correctly, you should get a response in the form of a JSON object.
   * Take note of the `refresh_token`'s value.
 
-#### 3. Host on Vercel
+#### 3. Host on Render
 
 * Fork this repository.
-* Head over to <a href="https://vercel.com">Vercel</a> and create an account if you don't already have one.
-  * Add a new project on Vercel.
+* Head over to <a href="https://render.com">Render</a> and create an account if you don't already have one.
+  * Add a new web service on Render.
     * Link your GitHub account if you haven't done so already.
-    * Make sure Vercel has access to the forked respository.
+    * Make sure Render has access to the forked respository.
     * Import the forked respository into your project.
-      * Give it a meaningful project name.
+      * Give it a meaningful name.
       * Keep the default options for the other settings.
       * Add the following environment variables along with their appropriate values:
         * `CLIENT_ID`
         * `CLIENT_SECRET`
         * `REFRESH_TOKEN`
-      * Click **Deploy**.
+      * Click **Create Webservice**.
       * Click **Continue to Dashboard**.
         * Find the **Domains** field and take note of the URL.
-          * Example: `{PROJECT_NAME}.vercel.app`.
+          * Example: `{NAME}.onrender.com`.
 
 #### 4. Add to your GitHub
 
-* In any markdown file, add the following (replace `{PROJECT_NAME}` with the name you gave your Vercel project):
+* In any markdown file, add the following (replace `{PROJECT_NAME}` with the name you gave your Render project):
 
   ```html
   <a href="https://github.com/minkxx/spotify-readme">
