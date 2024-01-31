@@ -124,4 +124,4 @@ https://accounts.spotify.com/authorize?client_id={CLIENT_ID}&response_type=code&
 
 ## Note
 
-This wasn't a completely original idea. This was inspired by <a href="https://github.com/novatorem/novatorem">novatorem's project</a> that was supposed to be for me only. Since others have asked for the source code, I decided to make this a public repo. I also incorporated the latest two PR's from the orignal project into this one and made it easy to customize!# spotify-readme
+This repo is a forked version of <a href="https://github.com/xditya/Spotify-Readme-New">Xditya's forked project project</a> from <a href="https://github.com/tthn0/Spotify-Readme">tthn0's project project</a>. I just made this repo deployable on <a href="https://render.com">Render</a>
