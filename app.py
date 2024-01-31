@@ -2,8 +2,10 @@ import requests
 from base64 import b64encode
 from flask import Flask, Response, render_template, request, url_for
 from random import randint
+from os import getenv
+from dotenv import find_dotenv, load_dotenv
 
-import config
+load_dotenv(find_dotenv())
 
 # Define base-64 encoded images
 with open("base64/placeholder_scan_code.txt") as f:
@@ -20,9 +22,9 @@ def get_token():
         "https://accounts.spotify.com/api/token",
         data={
             "grant_type": "refresh_token",
-            "refresh_token": config.REFRESH_TOKEN,
-            "client_id": config.CLIENT_ID,
-            "client_secret": config.CLIENT_SECRET,
+            "refresh_token": getenv("REFRESH_TOKEN"),
+            "client_id": getenv("CLIENT_ID"),
+            "client_secret": getenv("CLIENT_SECRET"),
         },
     )
     try:
