@@ -12,7 +12,7 @@
   A dynamic, customizable, and real-time Spotify now-playing widget for your README files that syncs with the song you’re currently playing. If you're not currently playing a song, it'll display one of your recent songs! Feel free to ask for help or make any PRs/issues/suggestions 😄
 </p>
 
-## Previews
+## Previews on Render
 
 #### Default
 ```
@@ -44,6 +44,43 @@
 ```
 ![Preview](https://minkxx-spotify-readme.onrender.com/?theme=dark)
 
+## Previews on Vercel
+
+#### Default
+```
+/api
+```
+![Preview](https://minkxx-spotify-readme.vercel.app/api)
+
+#### Spinning CD Effect
+```
+/api?spin=true
+```
+![Preview](https://minkxx-spotify-readme.vercel.app/api?spin=true)
+
+#### Include Scan Code
+```
+/api?scan=true
+```
+![Preview](https://minkxx-spotify-readme.vercel.app/api?scan=true)
+
+#### Rainbow Equalizer
+```
+/api?rainbow=true
+```
+![Preview](https://minkxx-spotify-readme.vercel.app/api?rainbow=true)
+
+#### Dark Theme
+```
+/api?theme=dark
+```
+![Preview](https://minkxx-spotify-readme.vercel.app/api?theme=dark)
+
+#### Combined
+```
+/api?theme=dark&rainbow=true&scan=true&spin=True
+```
+![Preview](https://minkxx-spotify-readme.vercel.app/api?theme=dark&rainbow=true&scan=true&spin=True)
 ## Setup/Deployment
 
 #### 1. Spotify's API
