@@ -98,7 +98,8 @@ def make_svg(spin, scan, theme, rainbow):
     if data:
         item = data["item"]
     else:
-        item = spotify_request("me/player/recently-played?limit=1")["items"][0]["track"]
+        item = spotify_request(
+            "me/player/recently-played?limit=1")["items"][0]["track"]
 
     if item["album"]["images"] == []:
         image = B64_PLACEHOLDER_IMAGE
