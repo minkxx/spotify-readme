@@ -108,8 +108,27 @@ https://accounts.spotify.com/authorize?client_id={CLIENT_ID}&response_type=code&
       * Click **Continue to Dashboard**.
         * Find the **Domains** field and take note of the URL.
           * Example: `{NAME}.onrender.com`.
+         
+#### 4. Host on Render
 
-#### 4. Add to your GitHub
+* Fork this repository.
+* Head over to <a href="https://vercel.com">Vercel</a> and create an account if you don't already have one.
+  * Add a new project.
+    * Link your GitHub account if you haven't done so already.
+    * Make sure Vercel has access to the forked respository.
+    * Import the forked respository into your project.
+      * Give it a meaningful name.
+      * Keep the default options for the other settings.
+      * Add the following environment variables along with their appropriate values:
+        * `CLIENT_ID`
+        * `CLIENT_SECRET`
+        * `REFRESH_TOKEN`
+      * Click **Deploy**.
+      * Click **Continue to Dashboard**.
+        * Find the **Domains** field and take note of the URL.
+          * Example: `{NAME}.vercel.app`.
+
+#### 5. Add to your GitHub
 
 * In any markdown file, add the following (replace `{PROJECT_NAME}` with the name you gave your Render project):
 
