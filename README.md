@@ -12,38 +12,6 @@
   A dynamic, customizable, and real-time Spotify now-playing widget for your README files that syncs with the song you’re currently playing. If you're not currently playing a song, it'll display one of your recent songs! Feel free to ask for help or make any PRs/issues/suggestions 😄
 </p>
 
-## Previews on Render
-
-#### Default
-```
-/
-```
-![Preview](https://minkxx-spotify-readme.onrender.com)
-
-#### Spinning CD Effect
-```
-/?spin=true
-```
-![Preview](https://minkxx-spotify-readme.onrender.com/?spin=true)
-
-#### Include Scan Code
-```
-/?scan=true
-```
-![Preview](https://minkxx-spotify-readme.onrender.com/?scan=true)
-
-#### Rainbow Equalizer
-```
-/?rainbow=true
-```
-![Preview](https://minkxx-spotify-readme.onrender.com/?rainbow=true)
-
-#### Dark Theme
-```
-/?theme=dark
-```
-![Preview](https://minkxx-spotify-readme.onrender.com/?theme=dark)
-
 ## Previews on Vercel
 
 #### Default
