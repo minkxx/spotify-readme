@@ -103,7 +103,7 @@ def make_svg(spin, scan, theme, rainbow):
 
     artists = ""
     for artist in item["artists"]:
-                    fetched = f' {artist["name"]}'
+                    fetched = f'{artist["name"]} & '
                     if "Various Artists" not in fetched:
                         artists += fetched
 
