@@ -101,11 +101,9 @@ def make_svg(spin, scan, theme, rainbow):
         item = spotify_request(
             "me/player/recently-played?limit=1")["items"][0]["track"]
 
-    artists = ""
-    for artist in item["artists"]:
-                    fetched = f'{artist["name"]} & '
-                    if "Various Artists" not in fetched:
-                        artists += fetched
+    artists = " & ".join([artist["name"] for artist in item["artists"]])
+    # for artist in item["artists"]:
+    #     artists_list = #f'{artist["name"]} & '
 
     if item["album"]["images"] == []:
         image = B64_PLACEHOLDER_IMAGE
