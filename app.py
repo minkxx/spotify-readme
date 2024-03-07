@@ -101,6 +101,12 @@ def make_svg(spin, scan, theme, rainbow):
         item = spotify_request(
             "me/player/recently-played?limit=1")["items"][0]["track"]
 
+    artists = ""
+    for artist in item["artists"]:
+                    fetched = f' {artist["name"]}'
+                    if "Various Artists" not in fetched:
+                        artists += fetched
+
     if item["album"]["images"] == []:
         image = B64_PLACEHOLDER_IMAGE
     else:
@@ -117,8 +123,8 @@ def make_svg(spin, scan, theme, rainbow):
         "index.html",
         **{
             "bars": generate_bars(bar_count, rainbow),
-            "artist": item["artists"][0]["name"].replace("&", "&amp;"),
-            "song": item["name"].replace("&", "&amp;"),
+            "artist": artists, #.replace("&", "&amp;"),
+            "song": item["name"], #.replace("&", "&amp;"),
             "image": image,
             "scan_code": scan_code if scan_code != "" else B64_PLACEHOLDER_SCAN_CODE,
             "theme": theme,
